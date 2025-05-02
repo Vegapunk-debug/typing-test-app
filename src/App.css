@@ -74,6 +74,10 @@ textarea {
   /* background-color: #0ead36; */
 }
 
+textarea:enabled {
+  background-color: #0ead36;
+}
+
 textarea:disabled {
   background-color: #0ead36;
   cursor: not-allowed;
@@ -138,7 +142,7 @@ button:disabled {
 }
 
 .footer-links a {
-  color: #00aced;
+  color: #00f0ff;
   margin: 0 10px;
   text-decoration: none;
 }
