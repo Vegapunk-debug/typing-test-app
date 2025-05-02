@@ -108,7 +108,7 @@ button:disabled {
 }
 
 .timer {
-  color: white;
+  color: #fd7e14;
   font-size: 50px;
   font-weight: bold;
   margin-bottom: 20px;
@@ -330,7 +330,7 @@ button:disabled {
 
 p:not(.footer p) {
   font-size: 20px;
-  color: blue;
+  color: #00f0ff;
   line-height: 1.6;
   margin: 10px 0;
 }
