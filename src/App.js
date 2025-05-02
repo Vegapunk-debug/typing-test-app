@@ -70,6 +70,7 @@ const App = () => {
           <span aria-hidden="true" class="hover-text">&nbsp;TypeAce&nbsp;</span>
         </button></h1>
         <p className="subtitle">Test your typing speed and accuracy</p>
+        <p className="subtitle">Click the Start button to start</p>
       </header>
 
       <main className="main-content">
