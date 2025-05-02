@@ -68,13 +68,13 @@ textarea {
   font-family: monospace;
   font-size: 25px;
   margin-bottom: 20px;
-  border: 1px solid #eeff00;
+  border: 1px solid #37FF8B;
   border-radius: 4px;
   resize: none;
 }
 
 textarea:disabled {
-  background-color: #e9ecef;
+  background-color: #0ead36;
   cursor: not-allowed;
 }
 
