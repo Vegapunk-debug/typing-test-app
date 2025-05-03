@@ -82,7 +82,7 @@ const App = () => {
           ))}
         </div>
 
-        {/* <div className="typing-area">
+        <div className="typing-area">
           <textarea
             ref={inputRef}
             value={typed}
@@ -91,8 +91,8 @@ const App = () => {
             placeholder="Start typing here..."
           />
           <div className="timer">⏱ Time: {elapsedTime}s</div>
-        </div> */}
-        <div className="typing-area">
+        </div>
+        {/* <div className="typing-area">
           <div className="inputbox">
             <textarea
               required
@@ -107,7 +107,7 @@ const App = () => {
             <i></i>
           </div>
           <div className="timer">⏱ Time: {elapsedTime}s</div>
-        </div>
+        </div> */}
 
 
         <div className="controls">
