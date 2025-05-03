@@ -82,7 +82,7 @@ const App = () => {
           ))}
         </div>
 
-        <div className="typing-area">
+        {/* <div className="typing-area">
           <textarea
             ref={inputRef}
             value={typed}
@@ -91,7 +91,24 @@ const App = () => {
             placeholder="Start typing here..."
           />
           <div className="timer">⏱ Time: {elapsedTime}s</div>
+        </div> */}
+        <div className="typing-area">
+          <div className="inputbox">
+            <textarea
+              required
+              ref={inputRef}
+              value={typed}
+              onChange={(e) => setTyped(e.target.value)}
+              disabled={!isStarted}
+              placeholder=" " // Important: keep placeholder non-empty for CSS trigger
+
+            />
+            <span>Start typing here...</span>
+            <i></i>
+          </div>
+          <div className="timer">⏱ Time: {elapsedTime}s</div>
         </div>
+
 
         <div className="controls">
           <button className="start" onClick={startTest} disabled={isStarted}><span>Start</span></button>
@@ -115,25 +132,7 @@ const App = () => {
         <p>© 2025 TypeAce. All rights reserved. Built by Rohit Nair P</p>
         <div className="footer-links">
           <a href="https://github.com/Vegapunk-debug" target="_blank" rel="noopener noreferrer">GitHub</a> |
-          <a href="https://www.linkedin.com/in/rohit-nair-p-7a535b251/" target="_blank" rel="noopener noreferrer">
-            <button class="Btn">
-              <div class="sign">
-                <svg
-                  fill="white"
-                  class="svgIcon"
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="1.6em"
-                  viewBox="0 0 448 512"
-                >
-                  <path
-                    d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"
-                  ></path>
-                </svg>
-              </div>
-
-              <div class="text">Linkedln</div>
-            </button>
-          </a> |
+          <a href="https://www.linkedin.com/in/rohit-nair-p-7a535b251/" target="_blank" rel="noopener noreferrer">LinkedIn</a> |
           <a href="mailto:you@example.com">Contact</a>
         </div>
       </footer>
