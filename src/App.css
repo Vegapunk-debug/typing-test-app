@@ -61,7 +61,7 @@ h1 {
   text-decoration: underline;
 }
 
-/* textarea {
+textarea {
   width: 100%;
   height: 100px;
   padding: 10px;
@@ -80,7 +80,7 @@ textarea:enabled {
 textarea:disabled {
   background-color: #0ead36;
   cursor: not-allowed;
-} */
+}
 
 .controls {
   display: flex;
@@ -110,12 +110,39 @@ button:disabled {
   cursor: not-allowed;
 }
 
+/* .timer {
+  color: #fd7e14;
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 20px;
+} */
 .timer {
   color: #fd7e14;
   font-size: 50px;
   font-weight: bold;
   margin-bottom: 20px;
+  animation: pulse 1.5s infinite;
 }
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    text-shadow: 0 0 5px #fd7e14;
+  }
+
+  50% {
+    transform: scale(1.05);
+    text-shadow: 0 0 15px #fd7e14;
+  }
+
+  100% {
+    transform: scale(1);
+    text-shadow: 0 0 5px #fd7e14;
+  }
+}
+
+
+
 
 .results {
   background-color: black;
@@ -628,7 +655,7 @@ button:disabled {
   color: #fd7e14;
   font-size: 50px;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 20px;qwertyuioqwertyuiowwwwwwertyoasdfghjklcv bnwerfgthyjklxcvbnm,erfghj
 }
 
 .results {
@@ -932,9 +959,6 @@ p:not(.footer p) {
   filter: drop-shadow(0 0 23px var(--animation-color))
 }
 
-.footer {
-  background-color: black;
-}
 
 
 .Btn {
@@ -976,25 +1000,4 @@ p:not(.footer p) {
   opacity: 0;
   color: white;
   font-size: 1.2em;
-  font-weight: 600;
-  transition-duration: 0.3s;
-}
-.Btn:hover {
-  width: 135px;
-  border-radius: 40px;
-  transition-duration: 0.3s;
-}
-.Btn:hover .sign {
-  width: 30%;
-  transition-duration: 0.3s;
-  padding-left: 10px;
-}
-.Btn:hover .text {
-  opacity: 1;
-  width: 70%;
-  transition-duration: 0.3s;
-  padding-right: 10px;
-}
-.Btn:active {
-  transform: translate(2px, 2px);
-} */
+  fo
