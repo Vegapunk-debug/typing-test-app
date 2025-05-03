@@ -1,4 +1,4 @@
-html,
+/* html,
 body {
   height: 100%;
   margin: 0;
@@ -32,9 +32,9 @@ body {
 
 h1 {
   /* color: #007bff; */
-  font-style: italic;
+/* font-style: italic;
   margin-bottom: 20px;
-}
+} 
 
 .sample-text {
   font-family: monospace;
@@ -59,7 +59,7 @@ h1 {
   color: #dc3545;
   background: #f8d7da;
   text-decoration: underline;
-}
+} */
 
 /* textarea {
   width: 100%;
@@ -82,7 +82,7 @@ textarea:disabled {
   cursor: not-allowed;
 } */
 
-.controls {
+/* .controls {
   display: flex;
   justify-content: center;
   gap: 10px;
@@ -148,13 +148,13 @@ button:disabled {
 
 .footer-links a:hover {
   text-decoration: underline;
-}
+} */
 
 /* .start {
   background-color: #007bff;
   color: white;
-} */
-.start {
+} 
+ .start {
   outline: none;
   cursor: pointer;
   border: none;
@@ -210,7 +210,7 @@ button:disabled {
   background-color: #dc3545;
   color: white;
 } */
-.end {
+/* .end {
   outline: none;
   cursor: pointer;
   border: none;
@@ -236,9 +236,9 @@ button:disabled {
 
 .end:hover span {
   color: black;
-}
+} */
 
-.end::before,
+/* .end::before,
 .end::after {
   position: absolute;
   top: 0;
@@ -259,13 +259,13 @@ button:disabled {
 
 .end:hover::before {
   transform: translate3d(100%, 0, 0);
-}
+} */
 
 /* .reset {
   background-color: #fd7e14;
   color: white;
 } */
-.reset {
+/* .reset {
   outline: none;
   cursor: pointer;
   border: none;
@@ -414,9 +414,9 @@ p:not(.footer p) {
   text-transform: uppercase;
   color: transparent;
   -webkit-text-stroke: 1px var(--text-stroke-color);
-}
+}  */
 
-.hover-text {
+/* .hover-text {
   position: absolute;
   box-sizing: border-box;
   content: attr(data-text);
@@ -436,10 +436,9 @@ p:not(.footer p) {
 
 .footer {
   background-color: black;
-}
+} */
 
-/* From Uiverse.io by Gaurang7717 */
-.Btn {
+/* .Btn {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -503,61 +502,468 @@ p:not(.footer p) {
 
 .Btn:active {
   transform: translate(2px, 2px);
+} */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: black;
 }
 
-/* From Uiverse.io by VijinV */
-.inputbox {
-  position: relative;
-  width: 196px;
+body {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #000000, #1a1a1a);
+  /* modern dark gradient */
 }
 
-.inputbox input {
-  position: relative;
-  width: 100%;
-  padding: 20px 10px 10px;
-  background: transparent;
-  outline: none;
-  box-shadow: none;
-  border: none;
-  color: #23242a;
-  font-size: 1em;
-  letter-spacing: 0.05em;
-  transition: 0.5s;
-  z-index: 10;
+.container {
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  max-height: 100%;
+  background: black;
+  padding: 40px 20px;
+  border-radius: 0;
+  box-shadow: 0 0 20px #37ff8b;
+  text-align: center;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
-.inputbox span {
-  position: absolute;
-  left: 0;
-  padding: 20px 10px 10px;
-  font-size: 1em;
-  color: #8f8f8f;
-  letter-spacing: 00.05em;
-  transition: 0.5s;
-  pointer-events: none;
+h1 {
+  color: #37ff8b;
+  font-style: italic;
+  margin-bottom: 30px;
+  font-size: 36px;
 }
 
-.inputbox input:valid~span,
-.inputbox input:focus~span {
-  color: #45f3ff;
-  transform: translateX(-10px) translateY(-34px);
-  font-size: 0, 75em;
-}
-
-.inputbox i {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 2px;
-  background: #45f3ff;
+.sample-text {
+  font-family: monospace;
+  font-size: 40px;
+  line-height: 1.6;
+  border: 1px solid black;
+  background: black;
+  color: white;
+  padding: 15px;
+  margin-bottom: 20px;
+  text-align: left;
   border-radius: 4px;
-  transition: 0.5s;
-  pointer-events: none;
-  z-index: 9;
+  height: 100px;
+  white-space: pre-wrap;
+  max-height: 150px;
+  overflow-y: auto;
 }
 
-.inputbox input:valid~i,
-.inputbox input:focus~i {
-  height: 44px;
+.correct {
+  color: #28a745;
+}
+
+.incorrect {
+  color: #dc3545;
+  background: #f8d7da;
+  text-decoration: underline;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  font-family: monospace;
+  font-size: 25px;
+  margin-bottom: 20px;
+  border: 1px solid #37FF8B;
+  border-radius: 4px;
+  resize: none;
+  background-color: #0ead36;
+  color: white;
+  outline: none;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+textarea:focus {
+  box-shadow: 0 0 10px #37ff8b, 0 0 20px #37ff8b;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 25px;
+  font-size: 18px;
+  background-color: #37ff8b;
+  border: none;
+  color: #000;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #2ec676;
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.timer {
+  color: #fd7e14;
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    text-shadow: 0 0 5px #fd7e14;
+  }
+
+  50% {
+    transform: scale(1.05);
+    text-shadow: 0 0 15px #fd7e14;
+  }
+
+  100% {
+    transform: scale(1);
+    text-shadow: 0 0 5px #fd7e14;
+  }
+}
+
+.results {
+  background-color: black;
+  padding: 15px;
+  border-radius: 4px;
+  margin-top: 0px;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+}
+
+.results div {
+  margin-bottom: 10px;
+  font-size: 1.1em;
+}
+
+.footer {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+}
+
+.footer-links a {
+  color: #00f0ff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.start {
+  outline: none;
+  cursor: pointer;
+  border: none;
+  padding: 0.9rem 2rem;
+  margin: 0;
+  font-family: inherit;
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  letter-spacing: 0.05rem;
+  font-weight: 700;
+  border-radius: 500px;
+  overflow: hidden;
+  background: #05f105;
+  color: ghostwhite;
+}
+
+.start span {
+  position: relative;
+  z-index: 10;
+  transition: color 0.4s;
+}
+
+.start:hover span {
+  color: black;
+}
+
+.start::before,
+.start::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.start::before {
+  content: "";
+  background: #000;
+  width: 120%;
+  left: -10%;
+  transform: skew(30deg);
+  transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.start:hover::before {
+  transform: translate3d(100%, 0, 0);
+}
+
+.end {
+  outline: none;
+  cursor: pointer;
+  border: none;
+  padding: 0.9rem 2rem;
+  margin: 0;
+  font-family: inherit;
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  letter-spacing: 0.05rem;
+  font-weight: 700;
+  border-radius: 500px;
+  overflow: hidden;
+  background: #dc3545;
+  color: ghostwhite;
+}
+
+.end span {
+  position: relative;
+  z-index: 10;
+  transition: color 0.4s;
+}
+
+.end:hover span {
+  color: black;
+}
+
+.end::before,
+.end::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.end::before {
+  content: "";
+  background: #000;
+  width: 120%;
+  left: -10%;
+  transform: skew(30deg);
+  transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.end:hover::before {
+  transform: translate3d(100%, 0, 0);
+}
+
+.reset {
+  outline: none;
+  cursor: pointer;
+  border: none;
+  padding: 0.9rem 2rem;
+  margin: 0;
+  font-family: inherit;
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  letter-spacing: 0.05rem;
+  font-weight: 700;
+  border-radius: 500px;
+  overflow: hidden;
+  background: #fd7e14;
+  color: rgb(255, 255, 255);
+}
+
+.reset span {
+  position: relative;
+  z-index: 10;
+  transition: color 0.4s;
+}
+
+.reset:hover span {
+  color: rgb(0, 0, 0);
+}
+
+.reset::before,
+.reset::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.reset::before {
+  content: "";
+  background: #000;
+  width: 120%;
+  left: -10%;
+  transform: skew(30deg);
+  transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.reset:hover::before {
+  transform: translate3d(100%, 0, 0);
+}
+
+.congrats {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+.success {
+  color: #28a745;
+}
+
+.fail {
+  color: #dc3545;
+}
+
+p:not(.footer p) {
+  font-size: 20px;
+  color: #00f0ff;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+.header {
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  font-size: 1.1em;
+  color: #0056b3;
+  margin-top: -10px;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.typing-area {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.results-area {
+  margin-top: 40px;
+}
+
+.sample-text {
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+@media (max-width: 600px) {
+  .controls {
+    flex-direction: column;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  .sample-text,
+  textarea {
+    font-size: 1em;
+  }
+
+  .footer-links a {
+    display: inline-block;
+    margin: 5px 10px;
+  }
+}
+
+.button {
+  margin: 0;
+  height: auto;
+  background: transparent;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+
+.button {
+  --border-right: 6px;
+  --text-stroke-color: rgba(255, 255, 255, 0.6);
+  --animation-color: #37FF8B;
+  --fs-size: 2em;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-size: var(--fs-size);
+  font-family: "Arial";
+  position: relative;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+
+.hover-text {
+  position: absolute;
+  box-sizing: border-box;
+  content: attr(data-text);
+  color: var(--animation-color);
+  width: 0%;
+  inset: 0;
+  border-right: var(--border-right) solid var(--animation-color);
+  overflow: hidden;
+  transition: 0.5s;
+  -webkit-text-stroke: 1px var(--animation-color);
+}
+
+.button:hover .hover-text {
+  width: 100%;
+  filter: drop-shadow(0 0 23px var(--animation-color))
+}
+
+.footer {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+}
+
+.footer-links a {
+  color: #00f0ff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
 }
