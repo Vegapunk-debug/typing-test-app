@@ -92,22 +92,7 @@ const App = () => {
           />
           <div className="timer">⏱ Time: {elapsedTime}s</div>
         </div>
-        {/* <div className="typing-area">
-          <div className="inputbox">
-            <textarea
-              required
-              ref={inputRef}
-              value={typed}
-              onChange={(e) => setTyped(e.target.value)}
-              disabled={!isStarted}
-              placeholder=" " // Important: keep placeholder non-empty for CSS trigger
 
-            />
-            <span>Start typing here...</span>
-            <i></i>
-          </div>
-          <div className="timer">⏱ Time: {elapsedTime}s</div>
-        </div> */}
 
 
         <div className="controls">
