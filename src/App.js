@@ -82,8 +82,7 @@ const App = () => {
           ))}
         </div>
 
-        {/* <div className="typing-area"> */}
-        <div class="input-container">
+        <div className="typing-area">
           <textarea
             ref={inputRef}
             value={typed}
