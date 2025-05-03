@@ -505,70 +505,59 @@ p:not(.footer p) {
   transform: translate(2px, 2px);
 }
 
+/* From Uiverse.io by VijinV */
 .inputbox {
   position: relative;
-  width: 100%;
-  margin-bottom: 20px;
+  width: 196px;
 }
 
-.inputbox textarea {
+.inputbox input {
   position: relative;
   width: 100%;
-  height: 100px;
   padding: 20px 10px 10px;
   background: transparent;
   outline: none;
+  box-shadow: none;
   border: none;
-  color: #fff;
-  font-family: monospace;
-  font-size: 25px;
+  color: #23242a;
+  font-size: 1em;
   letter-spacing: 0.05em;
   transition: 0.5s;
   z-index: 10;
-  resize: none;
-}
-
-.inputbox textarea:enabled {
-  background-color: #0ead36;
-}
-
-.inputbox textarea:disabled {
-  background-color: #0ead36;
-  cursor: not-allowed;
 }
 
 .inputbox span {
   position: absolute;
-  left: 10px;
-  top: 20px;
-  color: #8f8f8f;
+  left: 0;
+  padding: 20px 10px 10px;
   font-size: 1em;
-  letter-spacing: 0.05em;
-  pointer-events: none;
+  color: #8f8f8f;
+  letter-spacing: 00.05em;
   transition: 0.5s;
+  pointer-events: none;
 }
 
-.inputbox textarea:focus~span,
-.inputbox textarea:not(:placeholder-shown)~span {
-  color: #37FF8B;
+.inputbox input:valid~span,
+.inputbox input:focus~span {
+  color: #45f3ff;
   transform: translateX(-10px) translateY(-34px);
-  font-size: 0.75em;
+  font-size: 0, 75em;
 }
 
 .inputbox i {
   position: absolute;
-  bottom: 0;
   left: 0;
-  height: 2px;
+  bottom: 0;
   width: 100%;
-  background: #37FF8B;
+  height: 2px;
+  background: #45f3ff;
   border-radius: 4px;
   transition: 0.5s;
   pointer-events: none;
   z-index: 9;
 }
 
-.inputbox textarea:focus~i,
-.inputbox textarea:not(:placeholder-shown)~i {
+.inputbox input:valid~i,
+.inputbox input:focus~i {
   height: 44px;
 }
