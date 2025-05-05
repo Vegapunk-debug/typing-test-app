@@ -36,7 +36,7 @@ h1 {
 }
 
 .sample-text {
-  font-family: monospace;
+  /* font-family: monospace; */
   font-size: 40px;
   line-height: 1.6;
   border: 1px solid black;
@@ -72,12 +72,12 @@ textarea {
   resize: none;
 }
 
-textarea:enabled {
+/* textarea:enabled {
   background-color: #0ead36;
-}
+} */
 
 textarea:disabled {
-  background-color: #0ead36;
+  /* background-color: #0ead36; */
   cursor: not-allowed;
 }
 
@@ -111,7 +111,7 @@ button:disabled {
 
 
 .timer {
-  color: #fd7e14;
+  color: #37FF8B;
   font-size: 50px;
   font-weight: bold;
   margin-bottom: 20px;
@@ -121,17 +121,17 @@ button:disabled {
 @keyframes pulse {
   0% {
     transform: scale(1);
-    text-shadow: 0 0 5px #fd7e14;
+    text-shadow: 0 0 5px #37FF8B;
   }
 
   50% {
     transform: scale(1.05);
-    text-shadow: 0 0 15px #fd7e14;
+    text-shadow: 0 0 15px #37FF8B;
   }
 
   100% {
     transform: scale(1);
-    text-shadow: 0 0 5px #fd7e14;
+    text-shadow: 0 0 5px #37FF8B;
   }
 }
 
