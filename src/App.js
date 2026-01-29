@@ -106,9 +106,9 @@ const App = () => {
         {results && (
           <div className="results-area">
             <div className="results">
-              <div>📝 WPM: {results.wpm}</div>
-              <div>🎯 Accuracy: {results.accuracy}%</div>
-              <div>⏰ Time: {results.time}s</div>
+              <div> WPM: {results.wpm}</div>
+              <div> Accuracy: {results.accuracy}%</div>
+              <div> Time: {results.time}s</div>
               {message && <div className={`congrats ${message.includes("Oops") ? "fail" : "success"}`}>{message}</div>}
             </div>
           </div>
